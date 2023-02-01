@@ -1,0 +1,93 @@
+1. 선택한 카테고리, 쇼핑몰의 카테고리 코드, 쇼핑몰 코드만 배열에 담을 수 있도록 반복문 돌리는 로직
+
+2. 기간 선택에서 선택한 달의 시작일이 월요일일 경우 그대로(해당월의 1일 선택), 아닐경우 저번달의 마지막 주에서 월요일의 날짜를 선택 (마지막 달도 마찬가지)
+// ant-design
+3. 모달 컴포넌트에서 키워드, 제외 키워드, 브랜드명, 메이커명을 부모 컴포넌트로 전달하기
+
+4. 다운로드 로직 (Blob) api 모듈화하기 // 외부 라이브러리 excel format (server or client)
+
+5. try/catch on every api call
+
+20220831 ~ 20221001
+
+
+20220831 ~ 20220906
+
+20220907 ~ 20220913
+
+
+
+  // http:localhost:3000
+  // - random
+  // procedures > create tables > save search queries > able to download searched queries
+  //
+
+  // CLIENT => Browser (OS APP) url: IP html/css/js  ========== SERVER ----- DB
+  // HTTP - stateless => REQUEST < RESPONSE
+  // www.a.co.kr
+
+  // DANIEL USER => www.a.co.kr
+  // 1) userinfo=${5} => query=zzf + abcdf
+  // ====
+  // DANIEL = query = abcdf
+  
+  // 2) userinfo=${6} => query=cdf
+
+  /*
+  CLIENT APP
+  User => UserInfo
+  value persistent
+  Browser
+    - local storage: 평생
+    localStorage.setItem("userInfo", getRandomValue())
+    localStorage.setItem("userInfo", getRandomValue())
+    localStorage.getItem("userInfo")
+
+    - session storage: 창 또는 탭을 닫거나 소멸
+       sessionStorage.setItem("userInfo", getRandomValue())
+        sessionStorage.setItem("userInfo", getRandomValue())
+        sessionStorage.getItem("userInfo")
+
+    - cookie: 시간이 다 되면 소멸
+  */
+const Styles = {
+    inputForm : {
+      margin: "20px",
+    },
+    inputForm_sc: {
+      margin:"10px"
+    },
+    submitButton : {
+      height: "40px",
+      width: "100px",
+      marginLeft: "88.5%",
+      marginTop: "-10px",
+    },
+    submitButton2 : {
+      height: "40px",
+      width: "100px",
+      marginLeft: "94%",
+      marginTop: "-40px",
+    },
+    tableStyle : {
+    },
+    selectStyle : {
+      display: "inline",
+      width: "200px",
+    },
+    dateStyle : {
+      float: "left",
+      display: "inline",
+      width: "200px",
+    },
+    formItem : {
+      
+    },
+    formLabel : {
+      color: "black",
+      display: "inline"
+    },
+    formInput: {
+      width: 400
+    }
+  }

@@ -1,0 +1,139 @@
+/*
+...normalize
+*/
+
+
+.menuBar{
+  /* padding: 1rem; */
+  background: gray;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.tabs li{
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  color: #efefef;
+  padding: 1rem;
+}
+.tabs li.active{
+  background-color: black;
+  height: 100%;
+}
+
+
+.inputForm {
+  margin: "20px";
+}
+.submitButton {
+  height: "40px";
+  width: "80px";
+  margin-left: "50px";
+  margin-top: "23px";
+}
+.tableStyle {
+}
+.selectStyle  {
+  display: "inline";
+  width: "200px";
+}
+.dateStyle  {
+  float: "left";
+  display: "inline";
+  width: "200px";
+}
+.formItem  {
+}
+.formLabel  {
+  color: "black";
+}
+
+.form-check-inline {
+  
+}
+
+.hovertext {
+position: relative;
+border-bottom: 1px dotted black;
+}
+
+.hovertext:before {
+content: attr(data-hover);
+visibility: hidden;
+opacity: 0;
+width: 140px;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 5px;
+padding: 5px 0;
+transition: opacity 1s ease-in-out;
+
+position: absolute;
+z-index: 1;
+left: 0;
+top: 110%;
+}
+
+.hovertext:hover:before {
+opacity: 1;
+visibility: visible;
+}
+
+
+.Test {
+font-family: sans-serif;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.btn {
+display: block;
+}
+
+.tab-button {
+  display: block;
+  padding: 10px 20px 10px 20px;
+  float: left;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.orange {
+  border-top: 2px solid orange;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid white;
+  border-left: 1px solid #ccc;
+  color: black;
+  margin-top: -2px;
+}
+
+.tab-content {
+  display: none;
+  padding: 10px;
+}
+.show {
+  display: block;
+}
+
+ul.list {
+  list-style-type: none;
+  margin-left: 0;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.ul.list::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.ml-1 {
+  margin-left: 0 !important;
+}
